@@ -1,0 +1,6 @@
+Oreos::1.50::19
+Animal Crackers::1.00::24
+Zebra Cakes::2.25::27
+Doritos::3.50::2
+Diet Dr.Pepper::3.60::11
+Water::9.99::25

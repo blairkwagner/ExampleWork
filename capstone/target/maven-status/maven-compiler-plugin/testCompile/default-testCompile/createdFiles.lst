@@ -1,0 +1,9 @@
+com\sg\capstone\data\ContactRepositoryTest.class
+com\sg\capstone\data\VehiclesRepositoryTest.class
+com\sg\capstone\data\SalesRepositoryTest.class
+com\sg\capstone\data\AppointmentsRepositoryTest.class
+com\sg\capstone\data\SpecialsRepositoryTest.class
+com\sg\capstone\data\UsersRepositoryTest.class
+com\sg\capstone\data\Vehicle_TypesRepositoryTest.class
+com\sg\capstone\data\BrandRepositoryTest.class
+com\sg\capstone\data\ModelsRepositoryTest.class

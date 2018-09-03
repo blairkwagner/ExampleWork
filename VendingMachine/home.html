@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>Vending Machine</title>
+  <link href="css/bootstrap.css"
+  rel="stylesheet">
+  <style media="screen">
+  .item{
+    color: red;
+  }
+
+  </style>
+</head>
+<body>
+  <body style="background-color:pink;">
+    <div class="container">
+      <h1 class="text-center" style="margin-top: 30px">Vending Machine</h1>
+      <hr style="margin-bottom: 30px">
+      <div class="row">
+
+        <div id="snackColumn" class="col-sm-9">
+
+        </div>
+
+        <div class="col-sm-3">
+          <div class="row">
+            <h3 class="text-center">Total $ In</h3>
+            <form>
+              <div class="form-group">
+                <input class="form-control" id="balance" type="text" value="0.00" disabled>
+              </div>
+            </form>
+            <div>
+              <button id="addDollarBtn" class="btn btn-default btn-sm" type="button">Add Dollar</button>
+              <button id="addQuarterBtn" class="btn btn-default btn-sm" type="button">Add Quarter</button>
+              <button id="addDimeBtn" class="btn btn-default btn-sm" type="button">Add Dime</button>
+              <button id="addNickelBtn" class="btn btn-default btn-sm" type="button">Add Nickel</button>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <h3 class="text-center">Messages</h3>
+            <form>
+              <div class="form-group">
+                <input id="message" class="form-control" disabled></input>
+              </div>
+              <div class="form-group">
+                <h3 style="display:inline">Item: </h3>
+                <input id="itemNum" class="form-control" type="text" style="width:75%;display:inline" disabled>
+              </div>
+            </form>
+            <button id="makePurchaseBtn" class="btn btn-default btn-block btn-sm" type="button">Make Purchase</button>
+            <hr>
+          </div>
+          <div class="row" style="margin-bottom: 30px">
+            <h3 class="text-center">Change</h3>
+            <form>
+              <div class="form-group">
+                <textarea id="changeMsg" class="form-control" row="2" disabled></textarea>
+              </div>
+            </form>
+            <button id="changeBtn" class="btn btn-default btn-block btn-sm" type="button">Change Return</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+
+  </body>
+  </html>

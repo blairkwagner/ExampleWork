@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.sg.capstone.data.SalesRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.sg.capstone.data.SalesRepositoryTest
+testSomeMethod(com.sg.capstone.data.SalesRepositoryTest)  Time elapsed: 0 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.sg.capstone.data.SalesRepositoryTest.testSomeMethod(SalesRepositoryTest.java:33)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.sg.capstone.data.SalesRepositoryTest.testSomeMethod(SalesRepositoryTest.java:33)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'sales0_.vehicle_id' in 'field list'
+	at com.sg.capstone.data.SalesRepositoryTest.testSomeMethod(SalesRepositoryTest.java:33)
+

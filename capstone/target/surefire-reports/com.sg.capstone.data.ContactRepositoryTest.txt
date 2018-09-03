@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.sg.capstone.data.ContactRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.sg.capstone.data.ContactRepositoryTest
+testSomeMethod(com.sg.capstone.data.ContactRepositoryTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.sg.capstone.data.ContactRepositoryTest.testSomeMethod(ContactRepositoryTest.java:35)
+

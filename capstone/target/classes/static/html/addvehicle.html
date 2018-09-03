@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>car dealership</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Blair Wagner's Dealership</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="Vehicles.html">Search Inventory</a></li>
+                        <li><a href="New.html">New Inventory</a></li>
+                        <li><a href="Used.html">Used Inventory</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="brand.html">Add Make</a></li>
+                        <li><a href="model.html">Add Model</a></li>
+                        <li><a href="addvehicle.html"> Add Vehicles</a></li>
+                     
+                        <li><a href="comments.html">Customer Comments</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1>Add Vehicle</h1>
+
+        <div class="container">
+            <form onsubmit="return false">
+                <div class="form-group">
+                    <label for="brandContent">Select Make:</label>
+                    <select class="form-control" id="brandContent">
+
+                    </select>
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <label for="brandContent">Select Model:</label>
+                    <select class="form-control" id="modelContent">
+
+                    </select>
+                </div>
+
+
+                <input id="new" type="radio" name="Type" value="true" checked>New<br>
+                <input id="new" type="radio" name="Type" value="false"> Used<br>
+
+
+
+
+                <div class="form-group">
+                    <label for="sel1">Body Style:</label>
+                    <!_this is the new or vehicle type name but should be style_!>
+                    <div class="col-3">
+                        <select class="form-control" id="vehicleTypeContent">
+                            <option> </option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="usr">Year:</label>
+                    <div class="col-3">
+                        <input type="text" class="form-control" id="year">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sel1">Transmission:</label>
+
+                        <div class="col-3">
+                            <select class="form-control" id="transmissionType">
+                                <option>Automatic </option>
+                                <option>Manual </option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sel1">Color:</label>
+
+                        <div class="col-3">
+                            <select class="form-control" id="color">
+                                <option>Red</option>
+                                <option>Silver</option>
+                                <option>White</option>
+                                <option>Black</option>
+                                <option>Blue</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sel1">Interior Color:</label>
+                        <!_this is the new or Interior_!>
+                        <div class="col-3">
+                            <select class="form-control" id="interiorColor">
+                                <option>Brown</option>
+                                <option>Black</option>
+                                <option>Gray</option>
+                                <option>Tan</option>
+                                <option>Beige</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-3">
+                            <label for="usr">Mileage:</label>
+                            <input type="text" class="form-control" id="mileage">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-3">
+                            <label for="usr">VIN #:</label>
+                            <input type="text" class="form-control" id="vinNumber">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-3">
+                            <label for="usr">MSRP:</label>
+                            <input type="text" class="form-control" id="msrp">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-3">
+                            <label for="usr">Sale Price:</label>
+                            <input type="text" class="form-control" id="salePrice">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">Description:</label>
+                        <textarea class="form-control" rows="5" id="description">
+                        </textarea>
+                    </div>
+
+
+                    <!_Image_!>   
+
+
+                    <input type='file' />
+                    <br><img id="myImg" src="#" alt="your image" height=50 width=50>
+
+
+                    <button id="addVehicleBtn" class="btn btn-default btn-block btn-sm" type="button">Save</button>
+                    <div class="alert">
+
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js " integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ "
+        crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm "
+        crossorigin="anonymous "></script>
+        <script src="/js/addvehicle.js"></script>
+    </body>
+
+</html>
